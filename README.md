@@ -1,5 +1,5 @@
 # Node GraphQL
-This is an example GraphQL api written using Node and Apollo Server. It does basically the exact same thingas the other Python BookQL api.
+This is a GraphQL api I made using Node and Apollo Server. It does basically the exact same thing as the other Python [BookQL](https://github.com/MichaelT-W23/book_graphql_api) api.
 
 ## React GraphQL Website
 ### [Link to React GraphQL Website](https://michaelt-w23.github.io/react-graphql-website)
