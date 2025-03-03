@@ -5,6 +5,7 @@ import { typeDefs, resolvers } from './schema.js';
 import { AuthorAPI } from './datasources/authorAPI.js';
 import { BookAPI } from './datasources/bookAPI.js'; 
 import pkg from 'body-parser';
+import cors from 'cors'; 
 
 const { json } = pkg;
 
@@ -13,12 +14,13 @@ const server = new ApolloServer({
   resolvers
 });
 
-
 async function startServer() {
   await server.start();
   
   const app = express();
   
+  app.use(cors()); 
+
   app.use(
     '/graphql',
     json(),
